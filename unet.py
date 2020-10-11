@@ -205,7 +205,7 @@ class Unet(object):
 
 		for in_path,out_path,mask in zip(in_paths,out_paths,predictions):
 
-			print in_path
+			print(in_path)
 			
 			if mode == 'mask_only':
 				mask = mask.reshape((self.img_rows,self.img_cols))
