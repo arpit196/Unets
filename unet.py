@@ -127,7 +127,7 @@ class Unet(object):
 	def get_train_generator(self):
 		img_gen = self.train_gen(self.train_img_path)
 		mask_gen = self.train_gen(self.train_mask_path)
-		return itertools.izip(img_gen,mask_gen)
+		return zip(img_gen,mask_gen)
 
 	def get_validation_generator(self):
 		img_gen = self.test_gen(self.validation_img_path)
