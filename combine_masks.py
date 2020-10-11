@@ -23,8 +23,8 @@ for left_path,right_path in zip(left_paths,right_paths):
 	right_mask = get_bool_mask(right_path).astype(bool)
 	combined_mask = left_mask + right_mask
 
-	print name
-	print combined_mask.shape
+	print(name)
+	print(combined_mask.shape)
 	cv2.imwrite('data/all/combined_mask/'+name,combined_mask*255)
 
 
